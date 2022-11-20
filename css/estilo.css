@@ -1,0 +1,90 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-areas: 1fr auto 1fr;
+}
+
+
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: red;
+    text-align: center;
+}
+
+.navbar {
+    background: linear-gradient(to top, yellow, white, red);
+}
+
+.navbar-nav:hover {
+    transform: translate(10px, 5px);
+}
+
+img {
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+}
+
+.tarjetas{
+    margin: 50px;
+    padding: 20px;
+    text-align: center;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: center;
+    justify-content: space-around;
+}
+
+.card {
+    margin-top: 20px;
+}
+
+.card:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.container {
+    margin-top: 30px;
+}
+
+.contacto {
+    margin-left: 15px;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.mapa {
+    margin-top: 40px;
+}
+
+
+
+footer {
+    margin-top: 30px;
+    font-size: 24px;
+    color: black;
+    text-align: center;
+    padding: 30px;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .contenedor {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-items: center;
+        justify-content: space-evenly;
+    }
+
+}
